@@ -1,5 +1,5 @@
 class Hello {
 	public static void main(String[] arg) {
-		String userInfo = System.getproperty("user.name");
+		String userInfo = System.getProperty("user.name");
 	}
 }
