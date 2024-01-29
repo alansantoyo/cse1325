@@ -16,11 +16,14 @@ public class Note {
 	}
 	@Override
 	public String toString() {
-		if(pitch = null) {
-			return " ";
+		if(pitch == null) {
+			return  " ";
+		}
+		else if(octave != 0) {
+			return pitch + "" + octave;
 		}
 		else {
-			return pitch + octave;
+			return pitch + "";
 		}
 	}
-}
+		}
