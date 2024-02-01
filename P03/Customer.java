@@ -1,6 +1,13 @@
 public class Customer {
-    private string name;
-    private string email;
+    private String name;
+    private String email;
 
-    
+    public Customer(string name, string email) {
+
+    }
+
+    @Override
+    public String toString() {
+
+    }    
 }
