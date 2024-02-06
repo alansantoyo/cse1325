@@ -3,7 +3,8 @@ public class Item {
     private int quantity;
 
     public Item(Product product, int quantity) {
-
+        this.product = product;
+        this.quantity = quantity;
     }
     public int getPrice() {
         return (this.quantity * product.getPrice());    
@@ -11,6 +12,7 @@ public class Item {
 
     @Override
     public String toString() {
-        return this.quantity + " " + this.product + " " + "$ " + product.getPrice(); 
+        return String.format("%3d %-40s $%5d.%.02d", this.quantity, this.product.toString(),
+            product.getPrice()/100, product.getPrice()%100); 
     }
 }

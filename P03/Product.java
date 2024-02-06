@@ -1,5 +1,5 @@
 public class Product {
-    private int nextStockNumber;
+    private int nextStockNumber = 0;
     private int stockNumber;
     private String name;
     private int price;
@@ -9,8 +9,7 @@ public class Product {
             throw new IllegalArgumentException("Invalid price of " + name + ": " + price);
         }
         else {
-            this.nextStockNumber = nextStockNumber;
-            this.nextStockNumber = this.stockNumber+1;
+            this.stockNumber = nextStockNumber++;
             this.name = name;
             this.price = price;
         }
