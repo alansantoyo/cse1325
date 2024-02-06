@@ -1,5 +1,5 @@
 public class Product {
-    private int nextStockNumber = 0;
+    private static int nextStockNumber = 0;
     private int stockNumber;
     private String name;
     private int price;
