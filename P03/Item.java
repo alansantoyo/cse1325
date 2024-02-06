@@ -12,7 +12,12 @@ public class Item {
 
     @Override
     public String toString() {
-        return String.format("%3d %-40s $%5d.%.02d", this.quantity, this.product.toString(),
-            product.getPrice()/100, product.getPrice()%100); 
+        String formattedPrice = String.format("%5d.%02d", getPrice()/100, getPrice()%100);
+
+        String formattedQuantity = String.format("%3d", this.quantity);
+        String formattedProduct = String.format("%-40s", this.product.toString());
+
+        String itemString = String.format("%s %s $%s", formattedQuantity, formattedProduct, formattedPrice);
+        return itemString;
     }
 }
