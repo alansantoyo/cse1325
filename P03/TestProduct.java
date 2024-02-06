@@ -1,3 +1,7 @@
+/* This solution is NOT mine; solution by Professor George Rice */
+
+
+
 public class TestProduct {
     public static void main(String[] args) {
         int vector = 1;
