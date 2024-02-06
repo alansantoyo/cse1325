@@ -10,7 +10,7 @@ public class Item {
     }
 
     @Override
-    String toString() {
+    public String toString() {
 
     }
 }
