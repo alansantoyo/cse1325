@@ -27,6 +27,6 @@ public class Product {
         int dollars = this.price/100;
         int cents = this.price%100;
         
-        return String.format("%-s $%5d.%02d", dollars, cents);
+        return String.format("%-30s $%5d.%02d", this.name, dollars, cents);
     }    
 }
