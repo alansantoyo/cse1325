@@ -15,11 +15,11 @@ public class Product {
             this.price = price;
         }
     }
-    public int getstockNumber() {
-        return 
+    public int getStockNumber() {
+        return this.stockNumber;
     }
     public int getPrice() {
-
+        return this.price;
     }
 
     @Override
