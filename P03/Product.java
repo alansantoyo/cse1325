@@ -8,6 +8,11 @@ public class Product {
         if(price < 0) {
             throw new IllegalArgumentException("Invalid price of " + name + ": " + price);
         }
+        else {
+            int nextNum = 0;
+            this.name = name;
+            this.price = price;
+        }
     }
     public int getstockNumber() {
 
