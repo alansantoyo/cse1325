@@ -7,10 +7,14 @@ public class Customer {
         if(i==-1 || (email.indexOf('@',i))==-1) {
             throw new IllegalArgumentException("Invalid email address: " + email);
         }
+        else {
+            this.name = name;
+            this.email = email;
+        }
     }
 
     @Override
     public String toString() {
-        return name + " (" + email + ")";
+        return "" + this.name + " (" + this.email + ")";
     }    
 }
