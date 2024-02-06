@@ -5,7 +5,9 @@ public class Product {
     private int price;
 
     public Product(String name, int price) {
-
+        if(price < 0) {
+            throw new IllegalArgumentException("Invalid price of " + name + ": " + price);
+        }
     }
     public int getstockNumber() {
 
