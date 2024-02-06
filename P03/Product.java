@@ -9,13 +9,14 @@ public class Product {
             throw new IllegalArgumentException("Invalid price of " + name + ": " + price);
         }
         else {
-            int nextNum = 0;
+            this.nextStockNumber = nextStockNumber;
+            this.nextStockNumber = this.stockNumber+1;
             this.name = name;
             this.price = price;
         }
     }
     public int getstockNumber() {
-
+        return 
     }
     public int getPrice() {
 
@@ -23,6 +24,6 @@ public class Product {
 
     @Override
     public String toString() {
-
+        return this.name + "
     }    
 }
