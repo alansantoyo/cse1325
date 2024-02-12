@@ -18,7 +18,7 @@ public class Order {
     public int getPrice() {
         int totalPrice;
         for(Item item : items) {
-            totalPrice += item;
+            totalPrice += item.getPrice();
         }
     }
     @Override
