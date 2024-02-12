@@ -16,7 +16,10 @@ public class Order {
         items.add(item);    
     }
     public int getPrice() {
-    
+        int totalPrice;
+        for(Item item : items) {
+            totalPrice += item;
+        }
     }
     @Override
     public String toString() {
