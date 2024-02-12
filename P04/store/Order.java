@@ -12,8 +12,8 @@ public class Order {
         this.orderNumber = nextOrderkNumber++;
         this.items = new ArrayList<>();
     }
-    public addItem(Item item) {
-    
+    public void addItem(Item item) {
+        items.add(item);    
     }
     public int getPrice() {
     
