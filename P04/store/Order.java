@@ -24,10 +24,19 @@ public class Order {
     }
     @Override
     public String toString() {
-        StringBuilder reciept = new StringBuilder();
-        reciept.append("Order #").append(orderNumber).append("for")
+        StringBuilder receipt = new StringBuilder();
+        receipt.append("Order #").append(orderNumber).append("for")
             .append(customer.toString()).append("\n");
+
         int ordrTot = 0;
+        int num = items.size();
+        for(int i = num; i > 0; i--) {
+            Item item = items.get(num-i);
+            receipt.append(i).append(" ").append(item.toString())
+                .append("\n");
+            ordrTot += item.getPrice();
+        }
+        receipt.append("Order total $ ").append(ordrTot/100);
         return receipt.toString();
     }
 }
