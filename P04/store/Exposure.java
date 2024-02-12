@@ -16,5 +16,8 @@ public enum Exposure {
         else if(this == SHADE) {
             return "full shade";
         }
+        else {
+            return "N/A";
+        }
     }
 }
