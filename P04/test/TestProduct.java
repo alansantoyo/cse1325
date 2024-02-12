@@ -1,6 +1,7 @@
 /* This solution is NOT mine; solution by Professor George Rice */
-
 package test;
+import store.Product;
+
 
 public class TestProduct {
     public static void main(String[] args) {

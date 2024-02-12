@@ -1,4 +1,7 @@
 package test;
+import store.Customer;
+import store.Product;
+import store.Item;
 
 public class TestOutput {
     public static void main(String[] args) {
