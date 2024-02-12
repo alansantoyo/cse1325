@@ -8,6 +8,6 @@ public class Plant extends Product {
         this.exposure = exposure;
     }
     public Exposure getExposure() {
-    
+        return this.exposure;    
     }
 }
