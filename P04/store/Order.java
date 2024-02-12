@@ -24,6 +24,10 @@ public class Order {
     }
     @Override
     public String toString() {
-    
+        StringBuilder reciept = new StringBuilder();
+        reciept.append("Order #").append(orderNumber).append("for")
+            .append(customer.toString()).append("\n");
+        int ordrTot = 0;
+        return receipt.toString();
     }
 }
