@@ -25,7 +25,7 @@ public class Plant extends Product {
    /**
      * Returns the exposure level of the current plant.
      *
-     * @returns the recommended sun exposure for the plant
+     * @return the recommended sun exposure for the plant
      * @since   0.2
      */
     public Exposure getExposure() {

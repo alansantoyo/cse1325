@@ -31,7 +31,7 @@ public class Customer {
    /**
     * Returns the formatted name and email
     *
-    * @returns the name and email as one string
+    * @return the name and email as one string
     * since    0.2
     */
     @Override

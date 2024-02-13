@@ -38,7 +38,7 @@ public class Order {
    /**
      * Gets the price of the items in the order.
      *
-     * @returns the total price.
+     * @return the total price.
      * @since   0.2
      */
     public int getPrice() {
@@ -51,7 +51,7 @@ public class Order {
    /**
      * Prints out the order similar to a receipt
      *
-     * @returns the order in a formatted String with all the information given to it
+     * @return the order in a formatted String with all the information given to it
      * @since   0.2
      */
     @Override

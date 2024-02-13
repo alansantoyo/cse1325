@@ -23,7 +23,7 @@ public enum Exposure {
    /**
      * Gives back the chose enum as a string
      *
-     * @returns the desired string corresponding to the current exposure
+     * @return the desired string corresponding to the current exposure
      * @since   0.2
      */
     @Override
