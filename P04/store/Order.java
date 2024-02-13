@@ -25,7 +25,7 @@ public class Order {
     @Override
     public String toString() {
         StringBuilder receipt = new StringBuilder();
-        receipt.append("Order #").append(orderNumber).append("for")
+        receipt.append("Order #").append(orderNumber).append(" for ")
             .append(customer.toString()).append("\n");
 
         int ordrTot = 0;
@@ -36,7 +36,7 @@ public class Order {
                 .append("\n");
             ordrTot += item.getPrice();
         }
-        receipt.append("Order total $ ").append(ordrTot/100);
+        receipt.append("Order total $ ").append(ordrTot/100).append(".").append(ordrTot%100);
         return receipt.toString();
     }
 }

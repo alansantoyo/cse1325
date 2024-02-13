@@ -20,14 +20,16 @@ public class TestOutput {
             Plant p3 = new Plant("6 inch English Lavender", 2990, Exposure.PARTSUN);
             Plant p4 = new Plant("'Hayi' Rhaphidophora", 3299, Exposure.SUN);
 
-            Item i1 = new Item(p1, 1);
-            Item i2 = new Item(p2, 2);
+            Item i1 = new Item(p1, 4);
+            Item i2 = new Item(p2, 3);
             Item i3 = new Item(p3, 3);
             Item i4 = new Item(p4, 4);
 
             Order o1 = new Order(c1);
             o1.addItem(i1);
- 
+            o1.addItem(i2);
+            o1.addItem(i3);
+            o1.addItem(i4);
             System.out.println(o1.toString());
 
         } catch(Exception e) {
