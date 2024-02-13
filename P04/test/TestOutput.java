@@ -17,13 +17,13 @@ public class TestOutput {
 
             Plant p1 = new Plant("Cactus Cereus Peruvianus", 4990, Exposure.SUN);
             Plant p2 = new Plant("'White Princess' Philodendron", 5500, Exposure.SHADE);
-            Plant p3 = new Plant("6 inch English Lavender", 2990, Exposure.PARTSUN);
-            Plant p4 = new Plant("'Hayi' Rhaphidophora", 3299, Exposure.SUN);
+            Tool t3 = new Tool("Bypass Pruners", 2999);
+            Tool t4 = new Tool("Large Gardener's Cart", 34900);
 
             Item i1 = new Item(p1, 4);
             Item i2 = new Item(p2, 3);
-            Item i3 = new Item(p3, 3);
-            Item i4 = new Item(p4, 4);
+            Item i3 = new Item(t3, 2);
+            Item i4 = new Item(t4, 1);
 
             Order o1 = new Order(c1);
             o1.addItem(i1);

@@ -2,7 +2,7 @@ package store;
 import java.util.ArrayList;
 
 public class Order {
-    private static int nextOrderkNumber = 0;
+    private static int nextOrderkNumber = 1;
     private int orderNumber;
     private ArrayList<Item> items;
     private Customer customer;
