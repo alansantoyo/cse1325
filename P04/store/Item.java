@@ -24,7 +24,7 @@ public class Item {
    /**
      * Gets the price for the Item
      *
-     * @returns the total price for the quantity of this product
+     * @return the total price for the quantity of this product
      * @since   0.2
      */
     public int getPrice() {
@@ -33,7 +33,7 @@ public class Item {
    /**
      * Formats the quantity, product and price.
      *
-     * @returns the formatted quantity, product and price of the Item
+     * @return the formatted quantity, product and price of the Item
      * @since   0.2
      */
     @Override

@@ -29,7 +29,7 @@ public class Order {
    /**
      * Adds an item to the items ArrayList.
      * 
-     * @param Item the Item Arraylist
+     * @param item the Item Arraylist
      * @since 0.2
      */
     public void addItem(Item item) {
