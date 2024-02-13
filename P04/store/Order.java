@@ -39,7 +39,7 @@ public class Order {
      * Gets the price of the items in the order.
      *
      * @returns the total price.
-     * @since   1.0
+     * @since   0.2
      */
     public int getPrice() {
         int totalPrice = 0;
