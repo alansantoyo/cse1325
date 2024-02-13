@@ -10,6 +10,8 @@ package store;
  */
 public class Tool extends Product {
    /**
+     * Creates a Tool instance.
+     *
      * @param name    the name of the tool as a string
      * @param price   the price of the tool as an integer
      * @since         0.2
