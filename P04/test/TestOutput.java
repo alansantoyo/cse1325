@@ -2,6 +2,9 @@ package test;
 import store.Customer;
 import store.Product;
 import store.Item;
+import store.Exposure;
+import store.Plant;
+import store.Tool;
 
 public class TestOutput {
     public static void main(String[] args) {
@@ -14,10 +17,10 @@ public class TestOutput {
             System.out.println("Famous customers include\n  "
                              + c1 + "\n  " + c2 + "\n  "+ c3 + "\n  " + c4);
 
-            Product p1 = new Product("Cactus Cereus Peruvianus", 4990);
-            Product p2 = new Product("'White Princess' Philodendron", 5500);
-            Product p3 = new Product("6 inch English Lavender", 2909);
-            Product p4 = new Product("'Hayi' Rhaphidophora", 3299);
+            Plant p1 = new Plant("Cactus Cereus Peruvianus", 4990, Exposure.SUN);
+            Plant p2 = new Plant("'White Princess' Philodendron", 5500, Exposure.SHADE);
+            Plant p3 = new Plant("6 inch English Lavender", 2990, Exposure.PARTSUN);
+            Plant p4 = new Plant("'Hayi' Rhaphidophora", 3299, Exposure.SUN);
 
             System.out.println("Our best plants include:\n  "
                              + p1 + "\n  " + p2 + "\n  "+ p3 + "\n  " + p4);
