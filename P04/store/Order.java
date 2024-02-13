@@ -5,8 +5,8 @@ import java.util.ArrayList;
  * Models the customers' order.
  *
  * @author            Alan Santoyo-Pina
- * @version           1.0
- * @since             1.0
+ * @version           0.2
+ * @since             0.2
  * @license.agreement Gnu General Public License 3.0
  */
 
@@ -19,7 +19,7 @@ public class Order {
      * Constructs a new order.
      *
      * @param customer the customer's name and email address
-     * @since          1.0
+     * @since          0.2
      */ 
     public Order(Customer customer) {
         this.customer = customer;
@@ -29,8 +29,8 @@ public class Order {
    /**
      * Adds an item to the items ArrayList.
      * 
-     * @param the Item Arraylist
-     * @since 1.0
+     * @param Item the Item Arraylist
+     * @since 0.2
      */
     public void addItem(Item item) {
         items.add(item);    
@@ -52,7 +52,7 @@ public class Order {
      * Prints out the order similar to a receipt
      *
      * @returns the order in a formatted String with all the information given to it
-     * @since   1.0
+     * @since   0.2
      */
     @Override
     public String toString() {
