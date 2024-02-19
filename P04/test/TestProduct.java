@@ -1,4 +1,3 @@
-/* This solution is NOT mine; solution by Professor George Rice */
 package test;
 import store.Product;
 import store.Plant;
