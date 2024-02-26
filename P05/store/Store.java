@@ -8,20 +8,23 @@ public class Store {
     private ArrayList<Order> orders;
 
     public Store(String name) {
-
+        this.name = name;
+        this.customers = customers;
+        this.products = products;
+        this.orders = orders;
     }
     public String getName() {
-
+        return this.name;
     }
 
-    public void addCustomer(Customer customer) {
+    public void addCustomer(Customer customers) {
 
     }
     public String getCustomerList() {
 
     }
 
-    public void addProduct(Product product) {
+    public void addProduct(Product products) {
 
     }
     public String getProductList() {
