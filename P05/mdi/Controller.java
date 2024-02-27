@@ -19,7 +19,7 @@ public class Controller {
     }
 
     private void exit() {
-
+        isRunning = false;
     }
     private void placeOrder() {
 
