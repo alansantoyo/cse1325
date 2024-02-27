@@ -32,7 +32,11 @@ public class Store {
         products.add(product);
     }
     public String getProductList() {
-        for(
+        StringBuilder sbr = new StringBuilder();
+        for(int i = 0; i < products.size(); i++) {
+            sbr.append(i++).append(". ").append(products.get(i).getName()).append("\n");
+        }
+        return sbr.toString();
     }
 
     public int newOrder(int customerIndex) {
