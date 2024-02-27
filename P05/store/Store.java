@@ -17,18 +17,22 @@ public class Store {
         return this.name;
     }
 
-    public void addCustomer(Customer customers) {
-
+    public void addCustomer(Customer customer) {
+        customers.add(customer);
     }
     public String getCustomerList() {
-
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < customers.size(); i++) {
+            sb.append(i++).append(". ").append(customers.get(i).getName()).append("\n");
+        }
+        return sb.toString();
     }
 
-    public void addProduct(Product products) {
-
+    public void addProduct(Product product) {
+        products.add(product);
     }
     public String getProductList() {
-
+        for(
     }
 
     public int newOrder(int customerIndex) {
