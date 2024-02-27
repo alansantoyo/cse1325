@@ -40,13 +40,21 @@ public class Store {
     }
 
     public int newOrder(int customerIndex) {
-
+        Order order = new Order(customer);
+        orders.add(order);
+        return (orders.size() - 1);
     }
     public void addToOrder(int orderIndex, int productIndex, int quantity) {
-
+        Order order = orders.get(orderIndex);
+        Item item = new Item(productIndex, quantity);
+        order.addItem(item);
     }
     public String getOrderList() {
-
+        StringBuilder sber = new StringBuilder();
+        for(int i = 0; i < orders.size(); i++) {
+            sber.append(i++).append(". ").append(orders.get(i).getName()).append("\n");
+        }
+        return sber.toString();
     }
 
 }
