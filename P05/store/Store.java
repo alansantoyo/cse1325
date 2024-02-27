@@ -52,7 +52,7 @@ public class Store {
     public String getOrderList() {
         StringBuilder sber = new StringBuilder();
         for(int i = 0; i < orders.size(); i++) {
-            sber.append(i++).append(". ").append(orders.get(i).getName()).append("\n");
+            sber.append(i++).append(". ").append(orders.get(i).getOrderNumber()).append("\n");
         }
         return sber.toString();
     }
