@@ -16,8 +16,15 @@ public class Store {
 
     }
     public void save(BufferedWriter bw) throws IOException {
-
-    }
+        bw.write(  name + "\n");
+        bw.write(  customers.size() + "\n");
+        /*
+        bw.write(  products.size()  + "\n");
+        bw.write(  orders.size()    + "\n");
+        */
+        for(Customer customer : customers) {
+            customer.save(bw);
+        }
     public String getName() {
         return name;
     }
