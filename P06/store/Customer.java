@@ -1,5 +1,9 @@
 package store;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+
 public class Customer {
     public Customer(String name, String email) {
         int at = email.indexOf("@");
@@ -9,6 +13,12 @@ public class Customer {
         this.name = name;
         this.email = email;
     }
+
+    public Customer(BufferedReader br) {
+
+    }
+    public save(
+
     @Override
     public String toString() {
         return String.format("%s (%s)", name, email);
