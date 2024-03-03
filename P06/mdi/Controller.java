@@ -11,6 +11,12 @@ import store.Exposure;
 
 import java.util.Scanner;
 
+import java.io.FileReader;
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.IOException;
+
 public class Controller {
     public Controller(String storeName) {
         this.store = new Store(storeName);
