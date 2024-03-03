@@ -12,10 +12,10 @@ public class Store {
         this.products  = new ArrayList<>();
         this.orders    = new ArrayList<>();
     }
-    public Store(BufferedReader br {
+    public Store(BufferedReader br) throws IOException {
 
     }
-    public save(BufferedWriter bw) {
+    public void save(BufferedWriter bw) throws IOException {
 
     }
     public String getName() {

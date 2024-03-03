@@ -18,7 +18,7 @@ public class Customer {
         this.name = br.readLine();
         this.email = br.readLine();
     }
-    public save(BufferedWriter bw) throws IOException {
+    public void save(BufferedWriter bw) throws IOException {
         bw.write(name + " (");
         bw.write(email + ")" + '\n');
     }
