@@ -1,5 +1,8 @@
 package store;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Store {
@@ -8,6 +11,12 @@ public class Store {
         this.customers = new ArrayList<>();
         this.products  = new ArrayList<>();
         this.orders    = new ArrayList<>();
+    }
+    public Store(BufferedReader br {
+
+    }
+    public save(BufferedWriter bw) {
+
     }
     public String getName() {
         return name;
