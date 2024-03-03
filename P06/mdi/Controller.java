@@ -146,7 +146,19 @@ public class Controller {
         view = View.values()[selection];
         print("Switched view to " + view);
     }
+
+    private void open() {
+
+    }
+
+    private void saveAs() {
+ 
+    }
     
+    private void save() {
+
+    }
+
     // /////////////////////////////////////////////////////////////////////////
     //                          U S E R   O U T P U T
     // Instead of System.out.println, which would put output ABOVE the menu,
@@ -210,7 +222,8 @@ public class Controller {
     private Menu mainMenu;
     private String output;
     private boolean isRunning;
-    
+    private String filename = "Untitled.simple";
+
     private Scanner in;
     
     public void testData() {
