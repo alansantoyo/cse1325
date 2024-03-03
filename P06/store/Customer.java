@@ -15,10 +15,12 @@ public class Customer {
     }
 
     public Customer(BufferedReader br) throws IOException {
-
+        this.name = br.readLine();
+        this.email = br.readLine();
     }
     public save(BufferedWriter bw) throws IOException {
-
+        bw.write(name + " (");
+        bw.write(email + ")" + '\n');
     }
 
     @Override
