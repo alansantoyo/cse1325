@@ -14,10 +14,12 @@ public class Customer {
         this.email = email;
     }
 
-    public Customer(BufferedReader br) {
+    public Customer(BufferedReader br) throws IOException {
 
     }
-    public save(
+    public save(BufferedWriter bw) throws IOException {
+
+    }
 
     @Override
     public String toString() {
