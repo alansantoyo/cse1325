@@ -13,7 +13,13 @@ public class Store {
         this.orders    = new ArrayList<>();
     }
     public Store(BufferedReader br) throws IOException {
+        customers = new ArrayList<>();
 
+        int numCustomers = Integer.parseInt(br.readLine());
+        for(int i = 0; i < numCustomers; i++) {
+            Customer customer = new Customer(br);
+            customers.add(customer);
+        }
     }
     public void save(BufferedWriter bw) throws IOException {
         bw.write(  name + "\n");
