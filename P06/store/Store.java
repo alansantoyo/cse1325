@@ -31,6 +31,7 @@ public class Store {
         for(Customer customer : customers) {
             customer.save(bw);
         }
+    }
     public String getName() {
         return name;
     }

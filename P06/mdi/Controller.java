@@ -156,7 +156,12 @@ public class Controller {
     }
     
     private void save() {
-
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(filename))) {
+            store.save(bw);
+            System.out.println("Wrote simple to " + filename);
+        } catch (Exception e) {
+            System.err.println("Failed to save: " + e);
+        }
     }
 
     // /////////////////////////////////////////////////////////////////////////
