@@ -1,5 +1,0 @@
-ant clean > /dev/null
-(ant > /dev/null) || ant
-java test.TestCustomer
-java test.TestProduct
-java test.TestItem

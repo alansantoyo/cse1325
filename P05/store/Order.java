@@ -1,80 +1,74 @@
 package store;
-
 import java.util.ArrayList;
 
 /**
- * Models an order (in other words, the customer's receipt).
+ * Models the customers' order.
  *
- * @author             Professor George F. Rice
- * @version            1.0
- * @since              1.0
- * @license.agreement  Gnu General Public License 3.0
+ * @author            Alan Santoyo-Pina
+ * @version           0.2
+ * @since             0.2
+ * @license.agreement Gnu General Public License 3.0
  */
+
 public class Order {
-    /**
-     * Creates an Order instance.
+    private static int nextOrderkNumber = 1;
+    private int orderNumber;
+    private ArrayList<Item> items;
+    private Customer customer;
+   /**
+     * Constructs a new order.
      *
-     * The Customer for whom this Order is placed is provide
-     * as the constructor parameter. The Order number is
-     * auto-generated as sequential integers. Items may be 
-     * added to the Order via the addItem(Item) method.
-     *
-     * @param customer     the Customer placing this Order
-     * @since              1.0
-     */
+     * @param customer the customer's name and email address
+     * @since          0.2
+     */ 
     public Order(Customer customer) {
         this.customer = customer;
+        this.orderNumber = nextOrderkNumber++;
         this.items = new ArrayList<>();
-        this.orderNumber = nextOrderNumber++;
     }
-    /**
-     * Adds an Item to this Order.
-     *
-     * All Orders should logically have at least one Item (this is
-     * not enforced, however). Any number of Items will be accepted.
-     *
-     * @param item     the Item to add to the Order
-     * @since          1.0
+   /**
+     * Adds an item to the items ArrayList.
+     * 
+     * @param item the Item Arraylist
+     * @since 0.2
      */
     public void addItem(Item item) {
-        items.add(item);
+        items.add(item);    
     }
-    /**
-     * Calculates and returns the total price of the Order.
+   /**
+     * Gets the price of the items in the order.
      *
-     * The price is simply the sum of all Item prices.
-     *
-     * @returns     the total price of the Order
-     * @since       1.0
+     * @return the total price.
+     * @since   0.2
      */
     public int getPrice() {
-        int price = 0;
+        int totalPrice = 0;
         for(Item item : items) {
-            price += item.getPrice();
+            totalPrice += item.getPrice();
         }
-        return price;
+        return totalPrice;
     }
-    /**
-     * Returns an Order summary in receipt format.
+   /**
+     * Prints out the order similar to a receipt
      *
-     * This includes the Order number and Customer, a table
-     * of Items in the Order, and the total price of the Order.
-     * Sales tax is not included at this time.
-     *
-     * @returns     a formatted receipt for this Order
-     * @since       1.0
+     * @return the order in a formatted String with all the information given to it
+     * @since   0.2
      */
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder("Order #" + orderNumber + " for " + customer);
-        for(Item item : items) 
-            sb.append("\n  " + item);
-        int price = getPrice();
-        sb.append(String.format("\nOrder total $%5d.%2d", price/100, price%100));
-        return sb.toString();
+        StringBuilder receipt = new StringBuilder();
+        receipt.append("Order #").append(orderNumber).append(" for ")
+            .append(customer.toString()).append("\n");
+
+        int ordrTot = 0;
+        int num = items.size();
+        for(int i = num; i > 0; i--) {
+            Item item = items.get(num-i);
+            receipt.append(i).append(" ").append(item.toString())
+                .append("\n");
+            ordrTot += item.getPrice();
+        }
+        receipt.append("Order total $ ").append(ordrTot/100).append(".").append(ordrTot%100);
+        return receipt.toString();
     }
-    private ArrayList<Item> items;
-    private Customer customer;
-    private int orderNumber;
-    private static int nextOrderNumber = 0;
 }
