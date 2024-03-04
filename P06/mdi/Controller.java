@@ -148,7 +148,17 @@ public class Controller {
     }
 
     private void open() {
-
+        System.out.print("Enter a filename to open (Enter for '"
+                       + filename + "'): ");
+        String s = in.nextLine();
+        if(!s.isEmpty()) filename = s;
+        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
+            store  = new Store(br);
+            System.out.println("Opened Store from " + filename);
+        } catch (Exception e) {
+            System.err.println("Failed to read: " + e);
+            store = null;
+        }
     }
 
     private void saveAs() {
