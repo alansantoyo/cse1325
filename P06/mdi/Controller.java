@@ -152,7 +152,11 @@ public class Controller {
     }
 
     private void saveAs() {
- 
+        System.out.print("Enter a store filename to save: ");
+        String s = in.nextLine();
+        if(s.isEmpty()) return;
+        filename = s;
+        save(); 
     }
     
     private void save() {
