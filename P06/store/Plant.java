@@ -16,7 +16,7 @@ public class Plant extends Product {
     }
     public Plant(BufferedReader br) throws IOException {
         super(br);
-        this.exposure = Exposure.valueOf(exposure);
+        this.exposure = Exposure.valueOf(exposure.toString());
     }
     public void save(BufferedWriter bw) throws IOException {
         super.save(bw);
