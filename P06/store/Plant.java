@@ -15,10 +15,13 @@ public class Plant extends Product {
         this.exposure = exposure;
     }
     public Plant(BufferedReader br) throws IOException {
-   
+        super(br);
+        this.exposure = Exposure.valueOf(exposure);
     }
-    public void safe(BufferedWriter bw) throws IOException {
-
+    public void save(BufferedWriter bw) throws IOException {
+        super.save(bw);
+        String exposureName = exposure.name();
+        bw.write(exposureName + "\n");
     }
     public Exposure getExposure() {
         return exposure;
