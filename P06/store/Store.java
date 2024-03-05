@@ -19,20 +19,30 @@ public class Store {
     }
     public Store(BufferedReader br) throws IOException {
         customers = new ArrayList<>();
-
         int numCustomers = Integer.parseInt(br.readLine());
         for(int i = 0; i < numCustomers; i++) {
             Customer customer = new Customer(br);
             customers.add(customer);
         }
+        products = new ArrayList<>();
+        int numProducts = Integer.parseInt(br.readLine());
+        for(int i = 0; i < numProducts; i++) {
+            Product product = new Product(br);
+            customers.add(product);
+        }
+        orders = new ArrayList<>();
+        int numOrders = Integer.parseInt(br.readLine());
+        for(int i = 0; i < numOrders; i++) {
+            Order order = new Order(br);
+            customers.add(order);
+        }
+
     }
     public void save(BufferedWriter bw) throws IOException {
         bw.write(  name + "\n");
         bw.write(  customers.size() + "\n");
-        /*
         bw.write(  products.size()  + "\n");
         bw.write(  orders.size()    + "\n");
-        */
         for(Customer customer : customers) {
             customer.save(bw);
         }
