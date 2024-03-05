@@ -18,10 +18,16 @@ public abstract class Product {
         this.price = price;
     }
     public Product(BufferedReader br) throws IOException {
-
+        this.name =                              br.readLine();
+        this.price =           Integer.parseInt (br.readLine());
+        this.stockNumber =     Integer.parseInt (br.readLine());
+        this.nextStockNumber = Integer.parseInt (br.readLine());
     }
     public void save(BufferedWriter bw) throws IOException {
-
+        bw.write(name   + "\n");
+        bw.write("" + price + "\n");
+        bw.write("" + stockNumber + "\n");
+        bw.write("" + nextStockNumber + "\n");
     }
     public int getStockNumber() {
         return stockNumber;
