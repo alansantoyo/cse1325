@@ -14,6 +14,6 @@ public class Tool extends Product {
         super(name, price);
     }
     public Tool(BufferedReader br) {
-
+        super(br);
     }
 }
