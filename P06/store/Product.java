@@ -5,6 +5,10 @@ package store;
 // of the GNU General Public License as published by the Free Software Foundation, either 
 // version 3 of the License, or (at your option) any later version.
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+
 public abstract class Product {
     public Product(String name, int price) {
         if(price < 0) 
@@ -12,6 +16,12 @@ public abstract class Product {
         this.name = name;
         this.stockNumber = nextStockNumber++;
         this.price = price;
+    }
+    public Product(BufferedReader br) throws IOException {
+
+    }
+    public void save(BufferedWriter bw) throws IOException {
+
     }
     public int getStockNumber() {
         return stockNumber;
