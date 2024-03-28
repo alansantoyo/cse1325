@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <random>
+#include <chrono>
+#include <algorithm>
 
 int main(int args, char* argv[]) {
     std::vector<std::string> odds;
@@ -23,7 +26,9 @@ int main(int args, char* argv[]) {
         std::cout << i << std::endl;
     }
 
-    std::cout << "\nEven lengths:" << std::endl;
+    unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+    std::shuffle(evens->begin(), evens->end(), std::default_random_engine(seed));
+    std::cout << "\nEven lengths (shuffled):" << std::endl;
     for(auto i : *evens) {
         std::cout << i << std::endl;
     }
