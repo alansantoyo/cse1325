@@ -18,6 +18,15 @@ int main(int args, char* argv[]) {
         //std::cout << text << std::endl;
     }
 
+    std::cout << "Odd lengths:" << std::endl;
+    for(auto i : odds) {
+        std::cout << i << std::endl;
+    }
+    
+    std::cout << "\n\nEven lengths:" << std::endl;
+    for(auto i : *evens) {
+        std::cout << i << std::endl;
+    }
 
     return 0;
 }
