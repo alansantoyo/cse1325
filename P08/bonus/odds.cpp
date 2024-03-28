@@ -9,7 +9,13 @@ int main(int args, char* argv[]) {
     for(int i = 1; i < args; i++) {
         std::string text = argv[i];
         
-        std::cout << text << std::endl;
+        if((text.size() % 2) == 1) {
+            odds.push_back(text);
+        }
+        else {
+            evens->push_back(text);
+        }
+        //std::cout << text << std::endl;
     }
 
 
