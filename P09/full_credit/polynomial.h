@@ -1,4 +1,8 @@
-#inlude <iostream>
+#ifndef __POLYNOMIAL_H
+#define __POLYNOMIAL_H
+
+#include <iostream>
+#include <vector>
 
 class Polynomial {
   private:
@@ -6,6 +10,8 @@ class Polynomial {
 
   public:
     Polynomial(std::vector<double>& coefficients);
-    std::vector<double> solve();
+    virtual std::vector<double> solve() = 0;
 
-} 
+};
+
+#endif

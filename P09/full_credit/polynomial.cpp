@@ -4,4 +4,4 @@ Polynomial::Polynomial(std::vector<double>& coefficients)
     : _coefficients{coefficients} {
 }
 ~Polynomial() { }
-//solve(){ }
+// std::vector<double> solve(){ }
