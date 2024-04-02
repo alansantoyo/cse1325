@@ -6,6 +6,6 @@ class Polynomial {
 
   public:
     Polynomial(std::vector<double>& coefficients);
-    solve();
+    std::vector<double> solve();
 
 } 
