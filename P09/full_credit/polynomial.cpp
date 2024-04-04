@@ -3,6 +3,6 @@
 Polynomial::Polynomial(std::vector<double>& coefficients)
     : _coefficients{coefficients} {
 }
-~Polynomial() { }
+Polynomial::~Polynomial() { }
 
 // std::vector<double> polynomial::solve(){ }
