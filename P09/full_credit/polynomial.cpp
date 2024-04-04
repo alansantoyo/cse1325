@@ -1,8 +1,8 @@
 #include "polynomial.h"
 
 Polynomial::Polynomial(std::vector<double>& coefficients)
-    : _coefficients{coefficients} {
+    : _coefficients(coefficients) {
 }
 Polynomial::~Polynomial() { }
 
-std::vector<double> polynomial::solve(){ }
+std::vector<double> Polynomial::solve(){ }

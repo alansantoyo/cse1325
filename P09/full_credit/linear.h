@@ -4,14 +4,12 @@
 #include <iostream>
 
 
-class Linear {
+class Linear : public Polynomial {
   public:
     Linear(std::vector<double>& coefficients);
 
     virtual ~Linear();
-    virtual std::vector<double> solve() override {
-
-    }
+    virtual std::vector<double> solve() override;
 
 };
 
