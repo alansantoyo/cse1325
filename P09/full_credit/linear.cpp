@@ -7,4 +7,8 @@ Linear::Linear(std::vector<double>& coefficients)
 }
 Linear::~Linear(){}
 
-std::vector<double> Linear::solve() {return ((-1)*coefficients[1])/coefficients[0];}
+double Linear::solve() {
+
+    return ((-1)*coefficients[1])/coefficients[0];
+
+}

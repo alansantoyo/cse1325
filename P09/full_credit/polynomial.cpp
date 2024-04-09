@@ -5,4 +5,3 @@ Polynomial::Polynomial(std::vector<double>& coefficients)
 }
 Polynomial::~Polynomial() { }
 
-std::vector<double> Polynomial::solve(){ }
