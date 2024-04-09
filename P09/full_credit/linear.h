@@ -2,7 +2,7 @@
 #define __LINEAR_H
 
 #include <iostream>
-
+#include "polynomial.h"
 
 class Linear : public Polynomial {
   public:
