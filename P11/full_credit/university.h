@@ -9,7 +9,7 @@ private:
     std::string _name;
 
 public:
-    University(string _name, int _enrollment);    
+    University(std::string _name, int _enrollment);    
 
 };
 
