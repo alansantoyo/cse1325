@@ -6,10 +6,10 @@
 class University {
 private:
     int enrollment;
-    std::string enrollment;
+    std::string _name;
 
 public:
-    
+    University(string _name, int _enrollment);    
 
 };
 
